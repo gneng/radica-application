@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<style>
+		div {
+			padding: 25px 0px;
+		}
+		td {
+			padding: 7px 15px;
+		}
+	</style>
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<!-- user inputs -->
+		<form id="input-form">
+			<div class="form-group row">
+				<!-- userId -->
+				<div class="col-lg-1">
+					<input id="input-id" type="text" value="1" disabled class="form-control">
+				</div>
+				<!-- userName -->
+				<div class="col-lg-2">
+					<input id="input-name" type="text" placeholder="UserName" class="form-control">
+				</div>
+				<!-- userOccupation -->
+				<div class="col-lg-2">
+					<input id="input-occupation" type="text" placeholder="UserOccupation" class="form-control">
+				</div>
+				<!-- Add button -->
+				<div class="col-lg-1">
+					<button id="input-btn" type="submit" class="btn-primary btn">Add</button>
+				</div>
+			</div>
+		</form>
+
+		<!-- content sorter -->
+		<div class="form-group row">
+			<span class="col-lg-3">
+				<label>Sort By:</label>
+				<select id="sort-select" name="sort-by" class="form-control">
+					<option value="id">UserId</option>
+					<option value="name">UserName</option>
+					<option value="occupation">UserOccupation</option>
+				</select>
+			</span>
+		</div>
+
+		<!-- table of contents -->
+		<div>
+			<table border="1"></table>
+		</div>
+	</div>
+</body>
+</html>
